@@ -1,0 +1,36 @@
+<!--
+% cd /Users/kwanguhu/bin/
+% launchctl unload /Users/kwanguhu/bin/com.borgcube.randomBackground.plist
+% plutil -convert xml1 com.borgcube.randomBackground.xml -o com.borgcube.randomBackground.plist
+% launchctl load /Users/kwanguhu/bin/com.borgcube.randomBackground.plist-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.borgcube.randomBackground</string>
+        
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/kwanguhu/bin/randomBackground.sh</string>
+        </array>
+        
+        <key>Nice</key>
+        <integer>1</integer>
+        
+        <key>StartInterval</key>
+        <integer>108000</integer>
+        <!-- <integer>60</integer> -->
+
+        <key>RunAtLoad</key>
+        <true/>
+        
+        <key>StandardErrorPath</key>
+        <!-- <string>/Users/kwanguhu/bin/randomBackground.err</string> -->
+        <string>/dev/null</string>
+
+        <key>StandardOutPath</key>
+        <!-- <string>/Users/kwanguhu/bin/randomBackground.out</string> -->
+        <string>/dev/null</string>
+    </dict>
+</plist>
