@@ -1,5 +1,5 @@
 <!--
-% cd /Users/kwanguhu/bin/
+% cd /Users/kwanguhu/bin/randomBackground
 % launchctl unload /Users/kwanguhu/bin/com.borgcube.randomBackground.plist
 % plutil -convert xml1 com.borgcube.randomBackground.xml -o com.borgcube.randomBackground.plist
 % launchctl load /Users/kwanguhu/bin/com.borgcube.randomBackground.plist-->
@@ -12,7 +12,7 @@
         
         <key>ProgramArguments</key>
         <array>
-            <string>/Users/kwanguhu/bin/randomBackground.sh</string>
+            <string>/Users/kwanguhu/bin/randomBackground/randomBackground.sh</string>
         </array>
         
         <key>Nice</key>
@@ -26,11 +26,11 @@
         <true/>
         
         <key>StandardErrorPath</key>
-        <!-- <string>/Users/kwanguhu/bin/randomBackground.err</string> -->
+        <!-- <string>/Users/kwanguhu/bin/randomBackground/randomBackgroundrandomBackground.err</string> -->
         <string>/dev/null</string>
 
         <key>StandardOutPath</key>
-        <!-- <string>/Users/kwanguhu/bin/randomBackground.out</string> -->
+        <!-- <string>/Users/kwanguhu/bin/randomBackground/randomBackground.out</string> -->
         <string>/dev/null</string>
     </dict>
 </plist>
